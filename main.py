@@ -6,9 +6,9 @@ logging.basicConfig(level=logging.WARNING, filename='logs.txt')
 
 client = TelegramClient("redirect", API_ID, API_HASH)
 
-from_chats = ('findwork', 'devkz_jobs', 'lost_test')
-to_chat = "redirect_posts_bot"
-tags = ('Python',)
+from_chats = ('findwork', 'devkz_jobs', 'lost_test')  # replace with your channel usernames
+to_chat = "redirect_posts_bot"  # replace with your channel/chat/bot username
+tags = ('Python',)  # replace with your tags
 
 
 @client.on(events.NewMessage)
